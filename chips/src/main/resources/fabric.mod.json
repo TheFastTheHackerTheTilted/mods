@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "chips",
+  "version": "${version}",
+
+  "name": "Chips Mod",
+  "description": "This mod adds chips packages that acts like a reward box!",
+  "authors": [
+    "HorsePower"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/chips/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.horsepower.chips.ChipsMain"
+    ],
+    "client": [
+      "net.horsepower.chips.ChipsClient"
+    ]
+  },
+  "mixins": [
+    "chips.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

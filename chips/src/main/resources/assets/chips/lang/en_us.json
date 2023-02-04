@@ -1,0 +1,8 @@
+{
+  "item.chips.debug_bag": "Debug Bag",
+  "item.chips.bag_common": "Common Chips Packet",
+  "item.chips.bag_rare": "Rare Chips Packet",
+  "item.chips.bag_epic": "Epic Chips Packet",
+  "item.chips.bag_legendary": "Legendary Chips Packet",
+  "item.chips.id_getter": "Id Getter"
+}
