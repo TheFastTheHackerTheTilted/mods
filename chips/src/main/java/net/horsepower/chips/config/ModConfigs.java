@@ -28,7 +28,7 @@ public class ModConfigs {
         configs = new ModConfigProvider();
         createConfigs();
 
-        CONFIG = SimpleConfig.of(ChipsMain.MOD_ID + "config").provider(configs).request();
+        CONFIG = SimpleConfig.of(ChipsMain.MOD_ID + "mod").provider(configs).request();
         assignConfigs();
     }
 
