@@ -4,6 +4,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
@@ -32,7 +33,10 @@ public class RewardBagLegendary extends Item {
 
 
         if (!world.isClient() && hand == Hand.MAIN_HAND){
-            user.sendMessage(Text.literal(count+" of id:"+rItem+" is given!"));
+            Text name = Item.byRawId(rItem).getName();
+            String nn = name.getString();
+            user.sendMessage(Text.literal(count+" "+nn+" is given!").formatted(Formatting.YELLOW));
+
             itemHeld.decrement(1);
             user.dropStack(new ItemStack(Item.byRawId(rItem),count));
             return TypedActionResult.success(itemHeld);
