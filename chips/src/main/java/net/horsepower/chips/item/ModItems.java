@@ -1,9 +1,11 @@
 package net.horsepower.chips.item;
 
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.horsepower.chips.ChipsMain;
 import net.horsepower.chips.item.custom.*;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.*;
@@ -24,7 +26,8 @@ public class ModItems {
             new RewardBagEpic(new Item.Settings()), ModItemGroup.CHIPS);
     public static final Item BAG_LEGENDARY = registerModItem("bag_legendary",
             new RewardBagLegendary(new Item.Settings()), ModItemGroup.CHIPS);
-
+    public static final Item FRIED_CHIPS = registerModItem("chips",
+            new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(1).saturationModifier(1f).snack().build())),ModItemGroup.CHIPS);
 
     private static Item registerModItem(String name, Item item, ItemGroup group){
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
