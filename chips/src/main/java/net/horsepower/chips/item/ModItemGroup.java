@@ -13,4 +13,4 @@ import net.minecraft.util.Identifier;
 public class ModItemGroup {
 
     public static final ItemGroup CHIPS = FabricItemGroupBuilder.build(
-            new Identifier(ChipsMain.MOD_ID, "Chips"), () -> new ItemStack(Items.POTATO));}
+            new Identifier(ChipsMain.MOD_ID, "chips"), () -> new ItemStack(Items.POTATO));}
