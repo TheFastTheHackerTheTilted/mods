@@ -1,7 +1,8 @@
 package net.horsepower.chips.item;
 
 
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.horsepower.chips.ChipsMain;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -10,7 +11,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static final ItemGroup CHIPS = FabricItemGroup.builder(new Identifier(ChipsMain.MOD_ID))
-            .displayName(Text.literal("Chips"))
-            .icon(() -> new ItemStack(Items.POTATO))
-            .build();}
+
+    public static final ItemGroup CHIPS = FabricItemGroupBuilder.build(
+            new Identifier(ChipsMain.MOD_ID, "Chips"), () -> new ItemStack(Items.POTATO));}
