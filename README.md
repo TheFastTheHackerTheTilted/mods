@@ -5,7 +5,7 @@ I didnt wanna create new repos for each new mod
 
 ## Mods
 
-[Chips-Random Reward System](https://github.com/TheFastTheHackerTheTilted/mods/tree/main/chips)
+Chips-Random Reward System: [Source](https://github.com/TheFastTheHackerTheTilted/mods/tree/main/chips) [CurseForge](https://www.curseforge.com/minecraft/mc-mods/chips-reward-system)
 
 PocketGamble (WIP)
 
@@ -18,6 +18,7 @@ PocketGamble (WIP)
 
 -Mixed mod that adds lots of things; tools, armors, dimension, bosses, foods, blocks, enchs etc.
 
+-Ice cream mod that adds various ice creams
 
 ### Sign
 _Me and my favorite Horse_
