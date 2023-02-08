@@ -5,7 +5,7 @@ I didnt wanna create new repos for each new mod
 
 ## Mods
 
-Chips-Random Reward System: [Source](https://github.com/TheFastTheHackerTheTilted/mods/tree/main/chips) [CurseForge](https://www.curseforge.com/minecraft/mc-mods/chips-reward-system)
+Chips-Random Reward System: [Source](https://github.com/TheFastTheHackerTheTilted/mods/tree/main/chips) - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/chips-reward-system)
 
 PocketGamble (WIP)
 
