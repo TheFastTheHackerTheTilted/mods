@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.05,
+  "ingredient": {
+    "item": "chips:sliced_potato"
+  },
+  "result": "chips:chips"
+}
