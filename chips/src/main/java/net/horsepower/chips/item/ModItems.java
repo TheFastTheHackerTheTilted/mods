@@ -27,7 +27,9 @@ public class ModItems {
     public static final Item BAG_LEGENDARY = registerModItem("bag_legendary",
             new RewardBagLegendary(new Item.Settings()), ModItemGroup.CHIPS);
     public static final Item FRIED_CHIPS = registerModItem("chips",
-            new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(1).saturationModifier(1f).snack().build())),ModItemGroup.CHIPS);
+            new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(2).saturationModifier(1f).snack().build())),ModItemGroup.CHIPS);
+    public static final Item SLICED_POTATO = registerModItem("sliced_potato",
+            new Item(new FabricItemSettings()),ModItemGroup.CHIPS);
 
     private static Item registerModItem(String name, Item item, ItemGroup group){
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
